@@ -23,7 +23,7 @@ Planned future upgrades include enabling offline mobile-to-mobile messaging usin
 1. Clone the repository:
    ```bash
    git clone https://github.com/gobinda-prasad-paudel/off_grid_communication.git
-````
+```
 
 2. Install dependencies for the backend (Node.js):
 
