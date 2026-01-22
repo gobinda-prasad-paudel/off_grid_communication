@@ -1,31 +1,54 @@
+
 # Off-Grid Communication System
 
-This project implements an **off-grid communication system** designed to enable connectivity in remote areas, especially during natural disasters such as floods, earthquakes, or GLOFs, when conventional GSM networks may be unavailable. The system is inspired by walkie-talkie functionality but uses affordable, rapidly deployable hardware to facilitate communication for local communities.
+## Overview
+This project is an **off-grid communication system** designed to provide connectivity in remote areas and during natural disasters such as floods, earthquakes, and GLOFs, where conventional GSM networks may be unavailable. The system functions similarly to a walkie-talkie but is **affordable, rapid to deploy, and scalable** for local communities.  
+
+Planned future upgrades include enabling offline mobile-to-mobile messaging using LoRa modules connected via USB, allowing messages to be sent without internet access.
 
 ## Features
+- Low-cost communication in remote or disaster-affected areas.
+- LoRa-based long-range messaging.
+- Can operate independently of traditional network infrastructure.
+- Designed for rapid deployment to local communities.
+- Future support for offline mobile messaging via USB-connected LoRa modules.
 
-- **LoRa-based Communication**: Enables long-range wireless communication between devices.
-- **ESP32 Microcontroller**: Serves as the core hardware for sending and receiving messages.
-- **Offline Messaging**: Planned capability for offline mobile-to-mobile messaging via LoRa modules connected through USB.
-- **Rapid Deployment**: Can be quickly distributed to local users during emergencies.
-- **Scalable Design**: Designed to expand coverage and integrate with additional modules in the future.
-
-## Hardware
-
-- ESP32 Microcontroller
-- LoRa Transceiver Modules
-- USB interface for device connectivity
-- Power supply (battery or solar)
-
-## Software
-
-- Python backend for message routing
-- Node.js server for management and logging
-- MQTT protocol for lightweight messaging
-- Arduino IDE for ESP32 firmware
+## Technology Stack
+- **Microcontroller:** ESP32
+- **Communication Protocol:** LoRa
+- **Programming:** Arduino, Python, Node.js
+- **Messaging Broker:** MQTT
 
 ## Installation
-
-1. Clone this repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/gobinda-prasad-paudel/off_grid_communication.git
+````
+
+2. Install dependencies for the backend (Node.js):
+
+   ```bash
+   npm install
+   ```
+3. Upload firmware to ESP32 using Arduino IDE.
+
+## Usage
+
+* Power up the ESP32 modules.
+* Modules automatically establish a LoRa communication network.
+* Messages can be sent via the connected interface to other nodes in the network.
+* For advanced usage, integrate with USB-connected mobile devices (future feature).
+
+## Contribution
+
+Contributions are welcome! Please fork the repository and submit a pull request for bug fixes, improvements, or new features.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Gobinda Prasad Paudel
+Email: [gobindapaudelofficial@gmail.com](mailto:gobindapaudelofficial@gmail.com)
+Website: [gobindapoudel.com.np](https://gobindapoudel.com.np)
